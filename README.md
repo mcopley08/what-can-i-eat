@@ -10,6 +10,6 @@ This is a demonstration app of the various [Meteoric](https://github.com/meteori
 - [meteoric:autoform-ionic](https://github.com/meteoric/autoform-ionic)
 - [useraccounts:ionic](https://github.com/meteoric/useraccounts-ionic)
 
-See it in action here: [meteoric-contacts.meteor.com](http://meteoric-contacts.meteor.com)
+See it in action here: [meteoric-contacts.meteor.com](http://what-can-i-eat.meteor.com)
 
 
