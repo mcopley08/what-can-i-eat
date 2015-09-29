@@ -1,0 +1,18 @@
+<link href="/stylesheets/layout.css" rel="stylesheet">
+<template name="layout">
+  {{#ionView}}
+  	{{#ionBody}}
+  		{{#ionContent}}
+      		{{#ionList}}   		
+		  		<ion-toggle ng-model="diary" toggle-class="toggle-calm">Dairy</ion-toggle>
+		  		<ion-toggle ng-model="wheat" toggle-class="toggle-calm">Wheat</ion-toggle>
+		  		<ion-toggle ng-model="gluten" toggle-class="toggle-calm">Gluten</ion-toggle>
+		  		<ion-toggle ng-model="soy" toggle-class="toggle-calm">Soy</ion-toggle>
+  			{{/ionList}}
+  		{{/ionContent}}
+  	{{/ionBody}}
+  {{/ionView}}
+</template>
+
+
+
