@@ -1,0 +1,23 @@
+<template name="restaurants">
+	{{#ionView}}
+	  	{{#ionBody}}
+	  		{{#ionContent}}
+				<div class="bar bar-calm" id="header">
+					 <h1 class="title"><bold>What Can I Eat?!</bold></h1>			  
+				</div>
+				<div class="content has-header form-horizontal col col-center" id="main"> 
+					
+					<form>
+						<label class="item item-input row row-center">
+							<input class="col row-center" type="text" name="restaurantName" placeholder="Restaurant">
+						</label>	
+						<br>
+						<br>
+						<input type="submit" class="button button-clear next row row-right text-center" value="Next" style="float:right;">
+					</form>
+					
+				</div>		
+			{{/ionContent}}
+	  	{{/ionBody}}
+	  {{/ionView}}
+</template> 	

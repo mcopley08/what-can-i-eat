@@ -5,10 +5,12 @@
     <link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">
     <script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>
     <link rel="stylesheet" href="http://code.ionicframework.com/1.0.0-beta.13/css/ionic.css">
-    <link rel="stylesheet" href="stylesheets/layout.css">
+    <link rel="stylesheet" href="stylesheets/layout.scss">
+    <script src="allergies.js"></script>
 
   </head>
 
-  <body>
-    {{> layout}}
+  <body ng-controller="MainCrtl">
+    {{> restaurants}}
  </body>
+
