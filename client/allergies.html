@@ -84,13 +84,45 @@
 		      				<i class="checkbox-icon" style="display: inline-block; vertical-align: middle;"></i>
 		   				 </div>
 	    				<div class="item-content disable-pointer-events"></div>
-	    			</label></li>		      	
-	      		 </ul>	
+	    			</label></li>	
+	    			
 
-	      		 <div class="form-actions">
+	      		 </ul>	
+	      		 <div class="">
+	      		 	<label class="item item-input">
+				    	<!-- <span class="input-label">Other:</span> -->
+	    					<input class="col row-center" type="text" name="specialConstraints" placeholder="Other Constraints">	    					
+	      			</label>
+	      			<br>
+	      			<label class="item item-input">
+				    	<!-- <span class="input-label">Allow:</span> -->
+	    					<input class="col row-center" type="text" name="allow" placeholder="Allow">	  			
+	      			</label>
+	      			<br>
+	      		</div>
+	      		<ul class="list-borderless center" style="horizontal-align:center;">	
+	      			<li class="item row"><label class="item item-radio">
+				    	<input type="radio" name="option" id="substitutions">
+				    	<div class="item-content">
+				      		Substitutions?
+				    	</div>
+				    	<i class="radio-icon ion-checkmark"></i>
+				  	</label></li>
+
+				  	<li class="item row"><label class="item item-radio">
+				    	<input type="radio" name="option" id="seewhatyoucanthave">
+				    	<div class="item-content">
+				      		See what you can't have
+				    	</div>
+				    	<i class="radio-icon ion-checkmark"></i>
+				  	</label></li>
+
+	      		</ul>
+	      		<div class="form-actions">
 	        		<input class="button button-block button-stable" type="submit">
 	      			</div>
 			 	</form>
+
  
   			</div>	<!-- content has header  -->	
   		{{/ionContent}}

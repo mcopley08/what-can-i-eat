@@ -12,6 +12,8 @@ Router.route('/restaurants');
 
 Router.route('/allergies');
 
+Router.route('/results');
+
 // Router.route('restaurants', function () {
 //   this.render('restaurants');
 // });

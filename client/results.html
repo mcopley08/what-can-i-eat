@@ -1,0 +1,24 @@
+<template name="results">
+	{{#ionView}}
+	  	{{#ionBody}}
+	  		{{#ionContent}}
+	  			<div class="bar bar-calm" id="header">
+					 <h1 class="title"><bold>What Can I Eat?!</bold></h1>			  
+				</div>
+
+				<div class="content has-header form-horizontal col col-center" id="main"> 
+					 <ul class="list-borderless center" style="horizontal-align:center;">  
+			      	   	{{#each restaurants}}
+					   		<li class="item row center">
+					   			{{restaurantName}} 
+					   			<!-- <img src="{{picture}}"> -->
+					   		</li>	
+						
+        				{{/each}}
+        			</ul>	
+				</div>	
+
+	  		{{/ionContent}}
+	  	{{/ionBody}}
+	  {{/ionView}}
+</template> 

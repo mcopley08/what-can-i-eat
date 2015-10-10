@@ -15,10 +15,10 @@ Template.allergies.events({
 	   	for(var i = 0; i < curr.length; i++){	   		
 	   		if(curr[i].checked == true)
 	    		allergiesList.push(curr[i].id);
-	    		// alert(curr[i].id);
+	    		alert(curr[i].id);
 		}
 
-		     
+		     Router.go('results');
     }
    
   });
