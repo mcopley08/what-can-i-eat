@@ -6,50 +6,55 @@
 					 <h1 class="title"><bold>What Can I Eat?!</bold></h1>			  
 				</div>
 
-				<div class="content has-header form-horizontal col col-center" id="main"> 
-					
-					<div class="ion-tab tabs-positive tabs-icon-only">
-						<!-- What you CAN have -->
-						<div class="ion-tab" title="Eat">
-							 <ul class="list-borderless center" style="horizontal-align:center;">  
-					      	
-					      	   	<!-- {{#each menuItem}} -->
-							   		<li class="item row center"> 
-							   		    <!-- {{menuItemName}} -->
-							   		    Hola
-							   			<!-- <img src="{{picture}}"> -->
-							   			<button class="button button-stable">View</button>
-							   			<div class="popup-container">
-								   			<div class="popup">
-								   			 		<!-- restaurant info -->
-								   			 	<!-- {{#if title}} -->
-			              							<!-- <h3 class="popup-title">{{menuItemName}}</h3> -->
-			           							<!-- {{/if}} -->
-								   			</div>	
-								   		</div>	
-							   		</li>		
-		        				<!-- {{/each}} -->
-		        			</ul>
-		        		</div>		
-	        		</div>	
-	        			<!-- What you CAN'T have -->
-	        			<div class="ion-tab" title="NotEat">
-	        				 <ul class="list-borderless center" style="horizontal-align:center;">  
-					      	   	<!-- {{#each menuItem}} -->
-							   		<li class="item row center popup-container">
-							   		    <!-- {{menuItemName}}  -->
-							   			<!-- <img src="{{picture}}"> -->
-							   			
-							   			<div class="popup">
-							   			 		<!-- restaurant info -->
-							   			 	<!-- {{#if title}} -->
-		              							<!-- <h3 class="popup-title">{{menuItemName}}</h3> -->
-		           							<!-- {{/if}} -->
-							   			</div>	
-							   		</li>		
-		        				<!-- {{/each}} -->
-		        			</ul>
-	        			</div>		
+				<div class="content has-header form-horizontal row row-center tabs" id="main"> 
+					<!-- <div class="tab-item col-50" title="Eat"> -->
+						<a class="tab-item col-50" href="#">
+    						<i class="icon ion-fork"></i>Eat
+  						</a>
+							<!-- What you CAN have -->
+							<ul class="list-borderless center" style="horizontal-align:center;">  
+						      	
+						      	   	<!-- {{#each menuItem}} -->
+								   		<!-- <li class="item row center">  -->
+								   		    <!-- {{menuItemName}} -->
+								   			<!-- <img src="{{picture}}"> -->
+								   			<!-- <span class="col col-80">Restaurant Name</span>
+								   			<button class="col button button-stable button-small button-outline">View</button>
+								   			<div class="popup-container">
+									   			<div class="popup"> -->
+									   			 		<!-- restaurant info -->
+									   			 	<!-- {{#if title}} -->
+				              							<!-- <h3 class="popup-title">{{menuItemName}}</h3> -->
+				           							<!-- {{/if}} -->
+									   	<!-- 		</div>	
+									   		</div>	
+								   		</li> -->		
+			        				<!-- {{/each}} -->
+			        		</ul> 
+			        		
+			        <!-- </div>		 -->
+		        		
+		        		        			<!-- What you CAN'T have -->
+	        		<!-- <div class="tab-item col-50" title="NotEat"> -->
+	        			<a class="tab-item col-50" href="#">
+    						<i class="icon ion-knife"></i>Not  
+  						</a>
+        				 <ul class="list-borderless center" style="horizontal-align:center;">  
+				      	   	<!-- {{#each menuItem}} -->
+						   		<li class="item row center popup-container">
+						   		    <!-- {{menuItemName}}  -->
+						   			<!-- <img src="{{picture}}"> -->
+						   			
+						   			<div class="popup">
+						   			 		<!-- restaurant info -->
+						   			 	<!-- {{#if title}} -->
+	              							<!-- <h3 class="popup-title">{{menuItemName}}</h3> -->
+	           							<!-- {{/if}} -->
+						   			</div>	
+						   		</li>		
+	        				<!-- {{/each}} -->
+	        			</ul>
+	        		<!-- </div>			 -->
 				</div>	
 	  		{{/ionContent}}
 	  	{{/ionBody}}
