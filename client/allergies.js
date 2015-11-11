@@ -14,11 +14,17 @@ Template.allergies.events({
     	var curr = document.getElementsByName('category');
 	   	for(var i = 0; i < curr.length; i++){	   		
 	   		if(curr[i].checked == true)
+	   		{
 	    		allergiesList.push(curr[i].id);
-	    		alert(curr[i].id);
+	    		// alert(curr[i].id);
+	    	}	
 		}
 
-		     Router.go('results');
+		var substitutions = document.getElementById('substitutions').value;
+		
+		var canthave = document.getElementById('seewhatyoucanthave').value;
+		
+		Router.go('results');
     }
    
   });

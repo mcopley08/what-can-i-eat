@@ -1,0 +1,15 @@
+<template name="not-edible">
+<!--   <h3 class="page-header">What you CAN have</h3> -->
+  <ul class="list-group">
+    {{#each this}}
+      	<li class="list-group-item"><strong>{{name}}</strong><button class="col button button-stable button-small button-outline">View</button></li>
+     	<!-- <div class="popup-container">
+   			<div class="popup"> 
+			 	{{#if title}} 
+					<h3 class="popup-title">{{ingredients}}</h3> 
+				{{/if}} 
+   			</div> 	
+   		</div>	-->
+    {{/each}}
+  </ul>
+</template>

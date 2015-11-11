@@ -8,52 +8,28 @@
 
 				<div class="content has-header form-horizontal row row-center tabs tabs-icon-left tabs-background-positive" id="main"> 
 					<!-- <div class="tab-item col-50" title="Eat"> -->
-						<a class="tab-item col-50" href="#">
-    						<i class="icon ion-fork"></i><bold>What you CAN have</bold>
-  						</a>
-							<ul class="list-borderless center" style="horizontal-align:center;">  
-						      	
-						      	   	<!-- {{#each menuItem}} -->
-								   		<!-- <li class="item row center">  -->
-								   		    <!-- {{menuItemName}} -->
-								   			<!-- <img src="{{picture}}"> -->
-								   			<!-- <span class="col col-80">Restaurant Name</span>
-								   			<button class="col button button-stable button-small button-outline">View</button>
-								   			<div class="popup-container">
-									   			<div class="popup"> -->
-									   			 		<!-- restaurant info -->
-									   			 	<!-- {{#if title}} -->
-				              							<!-- <h3 class="popup-title">{{menuItemName}}</h3> -->
-				           							<!-- {{/if}} -->
-									   	<!-- 		</div>	
-									   		</div>	
-								   		</li> -->		
-			        				<!-- {{/each}} -->
-			        		</ul> 
-			        		
-			        <!-- </div>		 -->
-		        		
-		        		        			<!-- What you CAN'T have -->
-	        		<!-- <div class="tab-item col-50" title="NotEat"> -->
-	        			<a class="tab-item col-50" href="#">
-    						<i class="icon ion-knife"></i><bold>What you CAN'T have</bold>  
-  						</a>
-        				<ul class="list-borderless center" style="horizontal-align:center;">  
-				      	   	<!-- {{#each menuItem}} -->
-						   		<li class="item row center popup-container">
-						   		    <!-- {{menuItemName}}  -->
-						   			<!-- <img src="{{picture}}"> -->
-						   			
-						   			<div class="popup">
-						   			 		<!-- restaurant info -->
-						   			 	<!-- {{#if title}} -->
-	              							<!-- <h3 class="popup-title">{{menuItemName}}</h3> -->
-	           							<!-- {{/if}} -->
-						   			</div>	
-						   		</li>		
-	        				<!-- {{/each}} -->
-	        			</ul>
-	        		<!-- </div>			 -->
+					<!-- <h3 class="page-header row">{{restaurantName}}</h3> -->
+					<ul class="nav nav-pills row">
+					  	<li class="col col-50 active" data-template="edible" role="presentation">
+					  		<a href="#"><i class="icon ion-fork"></i><strong>CAN have</strong></a>
+					  	</li>
+					    <li class="col col-50" data-template="not-edible" role="presentation">
+					    	<a href="#"><i class="icon ion-knife"></i><strong>CAN'T have</strong></a>
+					    </li>
+  					</ul>
+  					<div class="has-header content form-horizontal row row-center" style="position: absolute; float: left; right: 5px; top: 100px;">
+  						{{> Template.dynamic template=tab data=tabData}} 
+  					</div>	
+
+  					<!-- <div class="row row-bottom"> -->
+  						<!-- <div class="col"><br><br><br></div> -->
+  						<!--   <ul class="list has-header" style="horizontal-align:center;">  >
+						  	<li class="item">Chicken Nuggets-10pc <button class="col button button-stable button-small button-outline">View</button></li>
+						  	<li class="item">Whole Wheat Bun <button class="col button button-stable button-small button-outline">View</button></li>
+						  </ul>	 -->
+  						<!-- {{> tab}}	-->
+  					<!-- </div> -->
+  												
 				</div>	
 	  		{{/ionContent}}
 	  	{{/ionBody}}

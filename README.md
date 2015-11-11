@@ -12,9 +12,14 @@ This is a demonstration app of the various [Meteoric](https://github.com/meteori
 
 See it in action here: [what-can-i-eat.meteor.com](http://what-can-i-eat.meteor.com)
 
+Download: /.meteor folder separately in root folder 
+
 ##Commmands:
 ```
 meteor mongo ds047672.mongolab.com:47672/what-can-i-eat-db -u elisalu -p password1
 meteor run 
 ```
 App running at: localhost:3000 
+
+(http://docs.meteor.com/#/basic/Template-helpers)
+(https://themeteorchef.com/snippets/using-dynamic-templates/#tmc-dynamic-templates-with-dynamic-data)

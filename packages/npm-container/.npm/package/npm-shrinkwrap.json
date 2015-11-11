@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "axios": {
+      "version": "0.7.0"
+    },
+    "es6-promise": {
+      "version": "3.0.2"
+    }
+  }
+}

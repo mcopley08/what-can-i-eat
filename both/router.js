@@ -14,14 +14,17 @@ Router.route('/allergies');
 
 Router.route('/results');
 
+Router.route('/edible');
+
+Router.route('/not-edible');
+
+// Router.route('exampleShow', {where:"server"});
+
 // Router.route('restaurants', function () {
 //   this.render('restaurants');
 // });
 
-// Router.map(function() {
-//   this.route('', {
-//     path: '/'
-//   });
+
 
 //   this.route('contacts.show', {
 //     path: '/contacts/:_id'

@@ -18,7 +18,7 @@ Template.restaurants.events({
     'submit form': function(){
       event.preventDefault();
       var restName = event.target.restaurantName.value;
-      alert(restName);
+      // alert(restName);
       Router.go('allergies');
     }
    
