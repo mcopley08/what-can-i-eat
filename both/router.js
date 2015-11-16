@@ -8,15 +8,39 @@ Router.configure({
 //   this.layout('restaurants');
 // });
 
-Router.route('/restaurants');
+//This is for the landing page
+// Router.route('/', {
+//     template: 'restaurants'
+// });
 
-Router.route('/allergies');
+Router.map(function() {
+  this.route('/', {
+    template:'restaurants'
+  });
 
-Router.route('/results');
+  this.route('allergies', {
+    path: '/allergies'
+  });
+  this.route('results', {
+    path: '/results'
+  });
+  this.route('edible', {
+    path: '/edible'
+  });
+  this.route('not-edible', {
+    path: '/not-edible'
+  });
+});
 
-Router.route('/edible');
+// Router.route('/restaurants');
 
-Router.route('/not-edible');
+// Router.route('/allergies');
+
+// Router.route('/results');
+
+// Router.route('/edible');
+
+// Router.route('/not-edible');
 
 // Router.route('exampleShow', {where:"server"});
 

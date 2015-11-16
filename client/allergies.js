@@ -1,14 +1,11 @@
-// document.getElementById('dairy').onclick = function() {
-
-// 	if(document.getElementById('dairy').checked ==true) 
-// 	{
-// 		alert("dairy");
-// 	}	
-
-// }
+Template.allergies.created = function () {
+  this.autorun(function () {
+    this.subscription = Meteor.subscribe('allergies');
+  }.bind(this));
+};
 
 Template.allergies.events({
-    'submit form': function(){
+    'submit form': function(event){
     	event.preventDefault();
     	var allergiesList = []; // store their names within a local array
     	var curr = document.getElementsByName('category');
@@ -19,37 +16,21 @@ Template.allergies.events({
 	    		// alert(curr[i].id);
 	    	}	
 		}
-
 		var substitutions = document.getElementById('substitutions').value;
 		
-		var canthave = document.getElementById('seewhatyoucanthave').value;
+		var canthave = document.getElementById('restrictions').value;
 		
-		Router.go('results');
+	    if(curr.length > 0)
+		{
+			Router.go('results');
+		}	
+		else{
+			alert("Please input a food allergy");
+		}
+		
     }
    
   });
 
 
 
-// Template.allergies.events({
-//   'click .selectPill': function(e) {
-//     var name = $(e.target).attr('for');
-//     if ($("input[name='+name+']").attr('checked') == 'checked'){
-//       $("input[name='+name+']").trigger('change').removeAttr('checked');
-//     }
-//     else{
-//       $("input[name='+name+']").trigger('change').attr('checked', 'checked');
-//     }
-//   },
-//   'change #input':function(e){
-//     alert("value changed");
-//   }
-// })
-
-//cannot set property onclick null 
-
-// document.getElementById('soy').onclick = function() {
-	
-// 	alert("soy");
-
-// }

@@ -15,11 +15,11 @@ Template.restaurants.rendered = function () {
 };
 
 Template.restaurants.events({
-    'submit form': function(){
+    'submit form': function(event){
       event.preventDefault();
       var restName = event.target.restaurantName.value;
-      // alert(restName);
-      Router.go('allergies');
+      // alert(restName); 
+      Router.go('allergies');      
     }
    
   });
