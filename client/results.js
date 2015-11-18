@@ -1,9 +1,3 @@
-Template.results.created = function () {
-  this.autorun(function () {
-    this.subscription = Meteor.subscribe('results');
-  }.bind(this));
-};
-
 Template.results.helpers({
   restaurantName: "Burger King"
 });
@@ -78,10 +72,7 @@ Template.results.events({
 });
 
 Template.results.events({  
-  // 'click .tab-item': function(event) { 
-  //   alert("not");
+  'click .button': function(event) { 
     
-  //   // document.getElementById("load").innerHTML='<object type="text/html" data="edible.html" ></object>';
-
-  // }
+  }
 });  

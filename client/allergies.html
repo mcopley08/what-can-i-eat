@@ -10,141 +10,112 @@
 			<div class="content has-header form-horizontal col-100" id="main"> 	
  		
 			      <form>
-			      	<h4 class="list=header text-center">Food Allergies:</h4>
+			      	<h4 class="list=header text-center col col-50 col-offset-33">Food Allergies:</h4>
 			      <ul class="list-borderless center" style="horizontal-align:center;">  
 			      	   	       
 	          		<!-- 1st-->
-				   <li class="item row"><label class="item item-checkbox-center col col-33 col-offset-33 text-center">
-							   		
-				    	<div class="checkbox checkbox-input-hidden disable-pointer-events" style="left:10px;">
-				      		<input class="checkbox" id="dairy" type="checkbox" value="{{_id}}" name="category" style="display: inline-block; vertical-align: middle;"/>
-				      		<i class="checkbox-icon" id="dairy" style="display: inline-block; vertical-align: middle;"></i>
-				      		<span>Dairy</span>
-				    	</div>
-				    	<div class="item-content disable-pointer-events"></div>
-					</label></li>
+				    <li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				  		Dairy
+			     		<label class="checkbox item-icon-right">
+				       		<input type="checkbox" id="dairy" value="{{_id}}" name="category">
+				       		<i class="icon checkbox-icon" id="dairy" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li>
 				    <!-- 2nd-->
-				    <li class="item row"><label class="item item-checkbox-center col col-33 col-offset-33 text-center">
-				    	
-					    <div class="checkbox checkbox-input-hidden disable-pointer-events">
-		      				<input class="checkbox" id="soy" type="checkbox" value="{{_id}}" name="category" style="display: inline-block; vertical-align: middle;"/>
-		      				<i class="checkbox-icon" style="display: inline-block; vertical-align: middle;"></i>
-		   				 </div>
-		   				 <span>Soy</span>
-	    				<div class="item-content disable-pointer-events"></div>
-	    			</label></li>
+				    <li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				  		Soy
+			     		<label class="checkbox item-icon-right">
+				       		<input type="checkbox" id="soy" value="{{_id}}" name="category">
+				       		<i class="icon checkbox-icon" id="soy" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li>
 	    			 <!-- 3rd-->
-				    <li class="item row"><label class="item item-checkbox-center col col-33 col-offset-33 text-center">
-				    	
-					    <div class="checkbox checkbox-input-hidden disable-pointer-events">
-		      				<input class="checkbox" id="gluten" type="checkbox" value="{{_id}}" name="category" style="display: inline-block; vertical-align: middle;"/>
-		      				<i class="checkbox-icon" style="display: inline-block; vertical-align: middle;"></i>
-		   				 </div>
-		   				 <span>Gluten</span>
-	    				<div class="item-content disable-pointer-events"></div>
-	    			</label></li>
+				    <li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				  		Gluten
+			     		<label class="checkbox item-icon-right">
+				       		<input type="checkbox" id="gluten" value="{{_id}}" name="category">
+				       		<i class="icon checkbox-icon" id="gluten" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li>
 	    			 <!-- 4th-->
-				    <li class="item row"><label class="item item-checkbox-center col col-33 col-offset-33 text-center">
-				    	
-					    <div class="checkbox checkbox-input-hidden disable-pointer-events">
-		      				<input class="checkbox" id="peanuts" type="checkbox" value="{{_id}}" name="category" style="display: inline-block; vertical-align: middle;"/>
-		      				<i class="checkbox-icon" style="display: inline-block; vertical-align: middle;"></i>
-		   				 </div>
-		   				 <span>Peanuts</span>
-	    				<div class="item-content disable-pointer-events"></div>
-	    			</label></li>
+				  	<li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				  		Peanuts
+			     		<label class="checkbox item-icon-right">
+				       		<input type="checkbox" id="peanuts" value="{{_id}}" name="category">
+				       		<i class="icon checkbox-icon" id="peanuts" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li>
 	    			 <!-- 5th-->
-				    <li class="item row"><label class="item item-checkbox-center col col-33 col-offset-33 text-center">
-				    	
-					    <div class="checkbox checkbox-input-hidden disable-pointer-events">
-		      				<input class="checkbox" id="treenuts" type="checkbox" value="{{_id}}" name="category" style="display: inline-block; vertical-align: middle;"/>
-		      				<i class="checkbox-icon" style="display: inline-block; vertical-align: middle;"></i>
-		   				 </div>
-		   				 <span>Tree Nuts</span>
-	    				<div class="item-content disable-pointer-events"></div>
-	    			</label></li>
+	    			 <li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				  		Tree Nuts
+			     		<label class="checkbox item-icon-right">
+				       		<input type="checkbox" id="treenuts" value="{{_id}}" name="category">
+				       		<i class="icon checkbox-icon" id="treenuts" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li>
 	    			 <!-- 6th-->
-				    <li class="item row"><label class="item item-checkbox-center col col-33 col-offset-33 text-center">
-				    	
-					    <div class="checkbox checkbox-input-hidden disable-pointer-events">
-		      				<input class="checkbox" id="fish" type="checkbox" value="{{_id}}" name="category" style="display: inline-block; vertical-align: middle;"/>
-		      				<i class="checkbox-icon" style="display: inline-block; vertical-align: middle;"></i>
-		   				 </div>
-		   				 <span>Fish</span>
-	    				<div class="item-content disable-pointer-events"></div>
-	    			</label></li>
+	    			 <li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				  		Fish
+			     		<label class="checkbox item-icon-right">
+				       		<input type="checkbox" id="fish" value="{{_id}}" name="category">
+				       		<i class="icon checkbox-icon" id="fish" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li>
 	    			 <!-- 7th-->
-				    <li class="item row"><label class="item item-checkbox-center col col-33 col-offset-33 text-center">
-				    	
-					    <div class="checkbox checkbox-input-hidden disable-pointer-events">
-		      				<input class="checkbox" id="wheat" type="checkbox" value="{{_id}}" name="category" style="display: inline-block; vertical-align: middle;"/>
-		      				<i class="checkbox-icon" style="display: inline-block; vertical-align: middle;"></i>
-		   				 </div>
-		   				 <span>Wheat</span>
-	    				<div class="item-content disable-pointer-events"></div>
-	    			</label></li>
-	    			 <!-- 8th-->
-				    <li class="item row"><label class="item item-checkbox-center col col-33 col-offset-33 text-center">
-				    	
-					    <div class="checkbox checkbox-input-hidden disable-pointer-events">
-		      				<input class="checkbox" id="shellfish" type="checkbox" value="{{_id}}" name="category" style="display: inline-block; vertical-align: middle;"/>
-		      				<i class="checkbox-icon" style="display: inline-block; vertical-align: middle;"></i>
-		   				 </div>
-		   				 <span>Shellfish</span>
-	    				<div class="item-content disable-pointer-events"></div>
-	    			</label></li>	
+	    			 <li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				  		Wheat
+			     		<label class="checkbox item-icon-right">
+				       		<input type="checkbox" id="wheat" value="{{_id}}" name="category">
+				       		<i class="icon checkbox-icon" id="wheat" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li>
+	    			 <!-- 8th-->	
+	    			<li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				  		Shellfish
+				     		<label class="checkbox item-icon-right">
+				       		<input type="checkbox" id="shellfish" value="{{_id}}" name="category">
+				       		<i class="icon checkbox-icon" id="shellfish" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li>
 	    			<!-- 9th-->
-	    			 <li class="item row"><label class="item item-checkbox-center col col-33 col-offset-33 text-center">
-				    	
-					    <div class="checkbox checkbox-input-hidden disable-pointer-events">
-		      				<input class="checkbox" id="eggs" type="checkbox" value="{{_id}}" name="category" style="display: inline-block; vertical-align: middle;"/>
-		      				<i class="checkbox-icon" style="display: inline-block; vertical-align: middle;"></i>
-		   				 </div>
-		   				 <span>Eggs</span>
-	    				<div class="item-content disable-pointer-events"></div>
-	    			</label></li>
-	    			
-	    			<!-- EXTRAAA -->
-	    			 <!-- <li class="item row"><label class="item item-checkbox-center col col-33 col-offset-33 text-center checkbox item-icon-right checkbox-input-hidden disable-pointer-events">
-	    			 		<p>HOLAAA</p>
-				    		<i class="checkbox-icon" id="dairy"></i>	
-				      		<input class="checkbox item-icon-right " id="dairy" type="checkbox" value="{{_id}}" name="category"/> 
-				    	<div class="item-content disable-pointer-events"></div>
-					</label></li> -->
-
+				    <li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				  		 Eggs
+				     		<label class="checkbox item-icon-right">
+				       		<input type="checkbox" id="eggs" value="{{_id}}" name="category">
+				       		<i class="icon checkbox-icon" id="eggs" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li>
+				 <br>
+				 <br> 	
 	      		 </ul>	
 	      		 <div class="">
-	      		 	<label class="item item-input">
+	      		 	<label class="item item-input col col-50 col-offset-33">
 				    	<!-- <span class="input-label">Other:</span> -->
 	    					<input class="col row-center" type="text" name="specialConstraints" placeholder="Other Constraints">	    					
 	      			</label>
 	      			<br>
-	      			<label class="item item-input">
+	      			<label class="item item-input col col-50 col-offset-33">
 				    	<!-- <span class="input-label">Allow:</span> -->
 	    					<input class="col row-center" type="text" name="allow" placeholder="Allow">	  			
 	      			</label>
 	      			<br>
 	      		</div>
 	      		<ul class="list-borderless center" style="horizontal-align:center;">
-	      			<li class="item row"><label class="item item-checkbox-center col col-33 col-offset-33 text-center">
-				    	
-					    <div class="checkbox checkbox-stable checkbox-input-hidden disable-pointer-events">
-		      				<input class="checkbox" id="substitutions" type="checkbox" value="{{_id}}" name="option_one" style="display: inline-block; vertical-align: middle;"/>
-		      				<i class="checkbox-icon" style="display: inline-block; vertical-align: middle;"></i>
-		   				 </div>
-		   				 <span>Substitutions?</span>
-	    				<div class="item-content disable-pointer-events"></div>
-	    			</label></li>
+	    			<li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				  		Substitutions?
+			     		<label class="checkbox checkbox-stable item-icon-right">
+				       		<input type="checkbox" id="substitutions" value="{{_id}}" name="category">
+				       		<i class="icon checkbox-icon" id="substitutions" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li>
+	    			<li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				  		See Restrictions?
+			     		<label class="checkbox checkbox-stable item-icon-right">
+				       		<input type="checkbox" id="restrictions" value="{{_id}}" name="category">
+				       		<i class="icon checkbox-icon" id="restrictions" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li>
 
-	    			<li class="item row"><label class="item item-checkbox-center col col-33 col-offset-33 text-center">
-				    	
-					    <div class="checkbox checkbox-stable checkbox-input-hidden disable-pointer-events">
-		      				<input class="checkbox" id="restrictions" type="checkbox" value="{{_id}}" name="option_two" style="display: inline-block; vertical-align: middle;"/>
-		      				<i class="checkbox-icon" style="display: inline-block; vertical-align: middle;"></i>
-		   				 </div>
-		   				 <span>See Restrictions?</span>
-	    				<div class="item-content disable-pointer-events"></div>
-	    			</label></li>
 	      		</ul>
 	      		<div class="form-actions">
 	        		<input class="button button-block button-stable" type="submit">

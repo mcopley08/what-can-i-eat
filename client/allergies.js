@@ -1,9 +1,3 @@
-Template.allergies.created = function () {
-  this.autorun(function () {
-    this.subscription = Meteor.subscribe('allergies');
-  }.bind(this));
-};
-
 Template.allergies.events({
     'submit form': function(event){
     	event.preventDefault();
@@ -13,7 +7,7 @@ Template.allergies.events({
 	   		if(curr[i].checked == true)
 	   		{
 	    		allergiesList.push(curr[i].id);
-	    		// alert(curr[i].id);
+	    		alert(curr[i].id);
 	    	}	
 		}
 		var substitutions = document.getElementById('substitutions').value;
