@@ -21,5 +21,6 @@ meteor run
 ```
 App running at: localhost:3000 
 
-(http://docs.meteor.com/#/basic/Template-helpers)
-(https://themeteorchef.com/snippets/using-dynamic-templates/#tmc-dynamic-templates-with-dynamic-data)
+[]http://docs.meteor.com/#/basic/Template-helpers
+[]https://themeteorchef.com/snippets/using-dynamic-templates/#tmc-dynamic-templates-with-dynamic-data
+[]http://meteoric.github.io/
