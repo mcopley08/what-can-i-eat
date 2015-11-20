@@ -21,6 +21,8 @@ meteor run
 ```
 App running at: localhost:3000 
 
-[]http://docs.meteor.com/#/basic/Template-helpers
-[]https://themeteorchef.com/snippets/using-dynamic-templates/#tmc-dynamic-templates-with-dynamic-data
-[]http://meteoric.github.io/
+[http://docs.meteor.com/#/basic/Template-helpers]
+[https://themeteorchef.com/snippets/using-dynamic-templates/#tmc-dynamic-templates-with-dynamic-data]
+[http://meteoric.github.io/]
+[http://www.loginradius.com/engineering/simple-popup-tutorial/]
+[https://github.com/meteoric/meteor-ionic/blob/master/components/ionPopup/ionPopup.html#L23]
