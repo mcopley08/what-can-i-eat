@@ -2,72 +2,59 @@
 	{{#ionView}}
 	  	{{#ionBody}}
 	  		{{#ionContent}}
-	  			<div class="bar bar-calm" id="header">
+	  			<div class="bar bar-positive" id="header">
 					 <h1 class="title"><bold>What Can I Eat?!</bold></h1>			  
 				</div>
-				<div class="tabs tabs-striped tabs-icon-left tabs-top tabs-background-positive tabs-color-calm">
+				<div class="tabs tabs-striped tabs-icon-left tabs-top tabs-background-positive tabs-color-positive">
 					<a href="" class="tab-item col col-50 edible" id="edible" name="edible"><i class="icon ion-fork"></i><i class="icon ion-knife"></i><strong>CAN have</strong></a>
-					<a href="" class="tab-item col col-50 not-edible" id="not-edible" name="not-edible"><i class="icon ion-fork"></i><i class="icon ion-knife"></i><strong>CAN'T have</strong></a>
+					<a href="" class="tab-item col col-50 not-edible" id="not-edible" name="not-edible" ><i class="icon ion-fork"></i><i class="icon ion-knife"></i><strong>CAN'T have</strong></a>
 				</div>		
 					<br>
 					<br>
-   				<div class="content has-header col col-33 col-offset-33" id="main" style="top:100px;">
-   					<div id="overlay_one" style="position: absolute; top: 0; bottom: 0; background: #ffffff; width: 100%; height: 100%; opacity: 0.8; z-index: 100">	
+   				<div class="content has-header col col-75 col-offset-20" id="main" style="top:100px;">
+   						
 	   				<div class="row row-center" id="e">
    						  <ul class="list-group">
-							  	<li class="list-group-item item-thumbnail-left"><strong>Chicken Nuggets-10pc</strong><button class="col button button-stable button-small button-outline" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;" id="eat">View</button></li>
+							  	<li class="list-group-item item-button-right col col-90" style="padding: 20px 20px;"><strong>Chicken Nuggets-10pc</strong><button class="button button-positive button-small button-outline" id="eat">View</button></li>
 							  	<br>
-							  	<li class="list-group-item"><strong>Whole Wheat Bun</strong><button class="col button button-stable button-small button-outline" style="display: inline-block; vertical-align: middle;" id="eat">View</button></li>
+							  	<li class="list-group-item item-button-right col col-90" style="padding: 20px 20px;"><strong>Whole Wheat Bun</strong><button class="button button-positive button-small button-outline" id="eat">View</button></li>
 							  	 
 							</ul>
 
-								<!-- END POPUP -->
-
-							  	<!--  <div class="popover-backdrop">
-								    <div class="popover-wrapper">
-								      <div class="popover">
-								        <div class="popover-arrow"></div>
-								        {{> UI.contentBlock}}
-								      </div>
-								    </div>
-								  </div> -->
-							  	<!-- <div class="popup-container">
-   									<div class="popup"> 
-									<h3 class="popup-title">Ingredients</h3> 
-									</div>
-								</div> --> 
-	
-								<!-- POPUP -->
-							
-							<div class="popup row" id="popup_one" style="display: none; position: absolute; top: 50%; left: 50%; background: #fff; margin-left: -150px; margin-top: -40px; z-index: 200;">
+							<div id="overlay_one" style="display:none; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index: 100';"></div>	<!-- overlay -->
+							<div class="popup col col-50" id="popup_one" style="display: none; position: absolute; top: 50%; left: 50%; background: #fff; margin-left: -170px; margin-top: -40px; z-index: 200;">
 							    <div class="popupcontent" style="padding: 10px;">
 							        <div class="card col">
 								    	<div class="item item-divider">
 									   		<div class="popupcontrols">
-							        			<span id="popupclose_one" style="float: right; padding: 10px; cursor: pointer;"><i class="icon ion-close"></i> </span> Ingredients 
+							        			<span id="popupclose_one" style="float: right; padding: 10px; cursor: pointer;"><i class="icon ion-close"></i> </span> Ingredients
 							    			</div>
 									    </div>
 										<div class="item item-text-wrap">
 										  	<a class="item item-thumbnail-center" href="#">
-	  										<img src="bk.png"> </a>
-											    This is a basic Card with some text.
+	  										<img class="image" src=""/> </a>
+											      
 										</div>
+										<div class="item item-divider">
+
+ 										</div>
 									</div>  
 							    </div>
 							</div>
 						</div>
-   					</div>	
+   					
    					<div class="row row-center" id="n">
-						<div id="overlay_two" style="position: absolute; top: 0; bottom: 0; background: #ffffff; width: 100%; height: 100%; opacity: 0.8; z-index: 100">
 	   						<ul class="list-group">
-						      	<li class="list-group-item"><strong>Whopper Sandwich</strong><button class="col button button-stable button-small button-outline" id="not">View</button></li>
+						      	<li class="list-group-item item-button-right col col-90" style="padding: 20px 20px;"><strong>Whopper Sandwich</strong><button class="button button-positive button-small button-outline" id="not">View</button></li>
 						      	<br>
-						        <li class="list-group-item"><strong>Sesame Seed Bun</strong><button class="col button button-stable button-small button-outline" id="not">View</button></li>
+						        <li class="list-group-item item-button-right col col-90" style="padding: 20px 20px;"><strong>Sesame Seed Bun</strong><button class="button button-positive button-small button-outline" id="not">View</button></li>
 						        <br>
-						        <li class="list-group-item"><strong>Whopper Sauce</strong><button class="col button button-stable button-small button-outline" id="not">View</button></li> 
+						        <li class="list-group-item item-button-right col col-90" style="padding: 20px 20px;"><strong>Whopper Sauce</strong><button class="button button-positive button-small button-outline" id="not">View</button></li> 
 							</ul>
 							<!-- POPUP -->
-								<div class="popup row" id="popup_two" style="display: none; position: absolute; top: 50%; left: 50%; background: #fff; margin-left: -150px; margin-top: -40px; z-index: 200;">
+								<div id="overlay_two" style="display:none; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index: 100';">
+								</div> <!-- overlay -->
+								<div class="popup col col-50" id="popup_two" style="display: none; position: absolute; top: 50%; left: 50%; background: #fff; margin-left: -170px; margin-top: -40px; z-index: 200;">
 								    <div class="popupcontent" style="padding: 10px;">
 								        <div class="card col">
 										    <div class="item item-divider">
@@ -77,14 +64,14 @@
 										    </div>
 											<div class="item item-text-wrap">
 											  	<a class="item item-thumbnail-center" href="#">
-	      										<img src="bk.PNG"> </a>
+	      										<img class="img" src="burgerking.PNG"> </a>
 											    This is a basic Card with some text.
 											  </div>
 										</div>  
 								    </div>
 								</div>    
 							<!-- END POPUP -->
-   						</div>
+   						
    					</div> 	
    				</div>	
 	

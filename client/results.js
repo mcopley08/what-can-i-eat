@@ -79,25 +79,26 @@ Template.results.events({
     if(button =="eat")
     {
       var overlay = document.getElementById("overlay_one");
-      overlay.style = 'display: block; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index: 100';
+      overlay.style.display = 'block';
+      // 'display: block; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index: 100';
       var button = document.getElementById("button");
       var popup = document.getElementById("popup_one");
       popup.style.display = 'block';  
       var closePopup = document.getElementById("popupclose_one");
         closePopup.onclick = function() {
-          overlay.style = 'display: none; position: absolute; top: 0; bottom: 0; background: #999; width: 100%; height: 100%; opacity: 0.8; z-index: 100';
+          overlay.style.display = 'none';
           popup.style.display = 'none';
       };
     }  
     if(button =="not")
     {
         var overlay = document.getElementById("overlay_two");
-        overlay.style = 'display: block; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index: 100';
+        overlay.style.display = 'block';
         var popup = document.getElementById("popup_two");
         popup.style.display = 'block';
         var closePopup = document.getElementById("popupclose_two");
         closePopup.onclick = function() {
-        overlay.style = 'display: none'; 
+        overlay.style.display = 'none'; 
         popup.style.display = 'none';
         };
     }  

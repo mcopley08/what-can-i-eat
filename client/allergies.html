@@ -3,18 +3,18 @@
   	{{#ionBody}}
   		{{#ionContent}}
   		
-			<div class="bar bar-calm" id="header">
-				 <h1 class="title"><bold>What Can I Eat?!</bold></h1>			  
+			<div class="bar bar-positive" id="header">
+				 <h1 class="title">Input Food Allergies</h1>			  
 			</div>
 		
 			<div class="content has-header form-horizontal col-100" id="main"> 	
  		
 			      <form>
-			      	<h4 class="list=header text-center col col-50 col-offset-33">Food Allergies:</h4>
+			      	<!-- <h4 class="list=header text-center col col-50 col-offset-33">Food Allergies:</h4> -->
 			      <ul class="list-borderless center" style="horizontal-align:center;">  
 			      	   	       
 	          		<!-- 1st-->
-				    <li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				    <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Dairy
 			     		<label class="checkbox item-icon-right">
 				       		<input type="checkbox" id="dairy" value="{{_id}}" name="category">
@@ -22,7 +22,7 @@
 				     	</label>
 				  	</li>
 				    <!-- 2nd-->
-				    <li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				    <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Soy
 			     		<label class="checkbox item-icon-right">
 				       		<input type="checkbox" id="soy" value="{{_id}}" name="category">
@@ -30,7 +30,7 @@
 				     	</label>
 				  	</li>
 	    			 <!-- 3rd-->
-				    <li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				    <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Gluten
 			     		<label class="checkbox item-icon-right">
 				       		<input type="checkbox" id="gluten" value="{{_id}}" name="category">
@@ -38,7 +38,7 @@
 				     	</label>
 				  	</li>
 	    			 <!-- 4th-->
-				  	<li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				  	<li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Peanuts
 			     		<label class="checkbox item-icon-right">
 				       		<input type="checkbox" id="peanuts" value="{{_id}}" name="category">
@@ -46,7 +46,7 @@
 				     	</label>
 				  	</li>
 	    			 <!-- 5th-->
-	    			 <li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+	    			 <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Tree Nuts
 			     		<label class="checkbox item-icon-right">
 				       		<input type="checkbox" id="treenuts" value="{{_id}}" name="category">
@@ -54,7 +54,7 @@
 				     	</label>
 				  	</li>
 	    			 <!-- 6th-->
-	    			 <li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+	    			 <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Fish
 			     		<label class="checkbox item-icon-right">
 				       		<input type="checkbox" id="fish" value="{{_id}}" name="category">
@@ -62,7 +62,7 @@
 				     	</label>
 				  	</li>
 	    			 <!-- 7th-->
-	    			 <li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+	    			 <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Wheat
 			     		<label class="checkbox item-icon-right">
 				       		<input type="checkbox" id="wheat" value="{{_id}}" name="category">
@@ -70,7 +70,7 @@
 				     	</label>
 				  	</li>
 	    			 <!-- 8th-->	
-	    			<li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+	    			<li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Shellfish
 				     		<label class="checkbox item-icon-right">
 				       		<input type="checkbox" id="shellfish" value="{{_id}}" name="category">
@@ -78,7 +78,7 @@
 				     	</label>
 				  	</li>
 	    			<!-- 9th-->
-				    <li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+				    <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		 Eggs
 				     		<label class="checkbox item-icon-right">
 				       		<input type="checkbox" id="eggs" value="{{_id}}" name="category">
@@ -89,26 +89,26 @@
 				 <br> 	
 	      		 </ul>	
 	      		 <div class="">
-	      		 	<label class="item item-input col col-50 col-offset-33">
+	      		 	<label class="item item-input col col-50 col-offset-25">
 				    	<!-- <span class="input-label">Other:</span> -->
 	    					<input class="col row-center" type="text" name="specialConstraints" placeholder="Other Constraints">	    					
 	      			</label>
 	      			<br>
-	      			<label class="item item-input col col-50 col-offset-33">
+	      			<label class="item item-input col col-50 col-offset-25">
 				    	<!-- <span class="input-label">Allow:</span> -->
-	    					<input class="col row-center" type="text" name="allow" placeholder="Allow">	  			
+	    					<input class="col row-center" type="text" name="allow" placeholder="Allow these items">	  			
 	      			</label>
 	      			<br>
 	      		</div>
 	      		<ul class="list-borderless center" style="horizontal-align:center;">
-	    			<li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+	    			<li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Substitutions?
 			     		<label class="checkbox checkbox-stable item-icon-right">
 				       		<input type="checkbox" id="substitutions" value="{{_id}}" name="category">
 				       		<i class="icon checkbox-icon" id="substitutions" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
 				  	</li>
-	    			<li class="item item-checkbox col col-50 col-offset-33" style="padding:10px 10px;">
+	    			<li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		See Restrictions?
 			     		<label class="checkbox checkbox-stable item-icon-right">
 				       		<input type="checkbox" id="restrictions" value="{{_id}}" name="category">
@@ -118,7 +118,7 @@
 
 	      		</ul>
 	      		<div class="form-actions">
-	        		<input class="button button-block button-stable" type="submit">
+	        		<input class="button button-block button-positive" type="submit">
 	      		</div>
 			 	</form>
 

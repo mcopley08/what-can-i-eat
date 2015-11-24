@@ -1,8 +1,53 @@
 body {
   cursor: url('http://ionicframework.com/img/finger.png'), auto;
+  
 }
 
 .checkbox input, .checkbox-icon {
   display: inline-block;
   vertical-align: middle;
+}
+
+@font-face {
+    font-family: 'fontawesome';
+    src:url('../fonts/fontawesome-webfont.eot');
+    src:url('../fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+        url('../fonts/fontawesome-webfont.woff') format('woff'),
+        url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+        url('../fonts/fontawesome-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title{
+	 font-family: 'Chelsea Market';
+	 font-size: 30px;
+}
+
+#main{
+	 font-family: 'Carter One';
+	 font-size: 18px;
+}
+
+.button{
+	font-family: 'Carter One';
+ 	font-size: 20px;
+}
+
+#edible{
+	font-family: 'Carter One';
+ 	font-size: 20px;
+}
+
+#not-edible{
+	font-family: 'Carter One';
+ 	font-size: 20px;
+}
+.image{
+ background: url("burgerking.PNG");
+  
+}
+
+.cover{
+  background: url("../images/cover_page.JPEG");
 }
