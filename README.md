@@ -26,3 +26,4 @@ App running at: localhost:3000
 [http://meteoric.github.io/]
 [http://www.loginradius.com/engineering/simple-popup-tutorial/]
 [https://github.com/meteoric/meteor-ionic/blob/master/components/ionPopup/ionPopup.html#L23]
+[https://css-tricks.com/snippets/css/using-font-face/][https://www.google.com/fonts#ChoosePlace:select]

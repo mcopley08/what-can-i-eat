@@ -20,28 +20,33 @@ body {
 }
 
 .title{
-	 font-family: 'Chelsea Market';
+	 font-family: 'Lobster';
 	 font-size: 30px;
 }
 
+h2{
+	font-family: 'Abel';
+	font-size: 20px;
+}
+
 #main{
-	 font-family: 'Carter One';
-	 font-size: 18px;
+	 font-family: 'Abel';
+	 font-size: 20px;
 }
 
 .button{
-	font-family: 'Carter One';
+	font-family: 'Abel';
  	font-size: 20px;
 }
 
 #edible{
-	font-family: 'Carter One';
- 	font-size: 20px;
+	font-family: 'Hammersmith One';
+ 	font-size: 14px;
 }
 
 #not-edible{
-	font-family: 'Carter One';
- 	font-size: 20px;
+	font-family: 'Hammersmith One';
+ 	font-size: 14px;
 }
 .image{
  background: url("burgerking.PNG");

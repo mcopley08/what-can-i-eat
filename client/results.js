@@ -106,5 +106,30 @@ Template.results.events({
     
 });
 
+// Template.results.events({
+// 'click': function(event){
 
+//     var overlay_one = document.getElementById("overlay_one");
+//     var overlay_two = document.getElementById("overlay_two");
+//     if(overlay_one.style.display == 'block')
+//     {
+//       if(event.target.id !="popup_one")
+//       { 
+//           overlay_one.style.display = 'none'; 
+//           popup.style.display = 'none';
+       
+//       }
+//     }
+//     else if(overlay_two.style.display == "block")  
+//     {
+//       if(event.target.id !="popup_two" )
+//       { 
+//           overlay_two.style.display = 'none'; 
+//           popup_two.style.display = 'none';
+        
+//       }
+//     }  
 
+//   }
+    
+// });
