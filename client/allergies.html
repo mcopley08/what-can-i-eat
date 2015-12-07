@@ -21,17 +21,17 @@
 			      	   	       
 	          		<!-- 1st-->
 				    <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
-				  		Dairy
-			     		<label class="checkbox item-icon-right">
-				       		<input type="checkbox" id="dairy" value="{{_id}}" name="category">
-				       		<i class="icon checkbox-icon" id="dairy" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
-
+				  		Dairy	
+			     		<label class="checkbox item-icon-right checkbox-input-hidden" for="dairy">	
+			     			<input class="checkbox" type="checkbox" id="dairy" value="{{_id}}" name="category" style="col col-100">
+				     		<i class="icon checkbox-icon" id="dairy" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i>
 				     	</label>
+				     	
 				  	</li>
 				    <!-- 2nd-->
 				    <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Soy
-			     		<label class="checkbox item-icon-right">
+			     		<label class="checkbox item-icon-right checkbox-input-hidden">
 				       		<input type="checkbox" id="soy" value="{{_id}}" name="category">
 				       		<i class="icon checkbox-icon" id="soy" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
@@ -39,7 +39,7 @@
 	    			 <!-- 3rd-->
 				    <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Gluten
-			     		<label class="checkbox item-icon-right">
+			     		<label class="checkbox item-icon-right checkbox-input-hidden">
 				       		<input type="checkbox" id="gluten" value="{{_id}}" name="category">
 				       		<i class="icon checkbox-icon" id="gluten" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
@@ -47,7 +47,7 @@
 	    			 <!-- 4th-->
 				  	<li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Peanuts
-			     		<label class="checkbox item-icon-right">
+			     		<label class="checkbox item-icon-right checkbox-input-hidden">
 				       		<input type="checkbox" id="peanuts" value="{{_id}}" name="category">
 				       		<i class="icon checkbox-icon" id="peanuts" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
@@ -55,7 +55,7 @@
 	    			 <!-- 5th-->
 	    			 <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Tree Nuts
-			     		<label class="checkbox item-icon-right">
+			     		<label class="checkbox item-icon-right checkbox-input-hidden">
 				       		<input type="checkbox" id="treenuts" value="{{_id}}" name="category">
 				       		<i class="icon checkbox-icon" id="treenuts" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
@@ -63,7 +63,7 @@
 	    			 <!-- 6th-->
 	    			 <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Fish
-			     		<label class="checkbox item-icon-right">
+			     		<label class="checkbox item-icon-right checkbox-input-hidden">
 				       		<input type="checkbox" id="fish" value="{{_id}}" name="category">
 				       		<i class="icon checkbox-icon" id="fish" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
@@ -71,7 +71,7 @@
 	    			 <!-- 7th-->
 	    			 <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Wheat
-			     		<label class="checkbox item-icon-right">
+			     		<label class="checkbox item-icon-right checkbox-input-hidden">
 				       		<input type="checkbox" id="wheat" value="{{_id}}" name="category">
 				       		<i class="icon checkbox-icon" id="wheat" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
@@ -79,7 +79,7 @@
 	    			 <!-- 8th-->	
 	    			<li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Shellfish
-				     		<label class="checkbox item-icon-right">
+				     		<label class="checkbox item-icon-right checkbox-input-hidden">
 				       		<input type="checkbox" id="shellfish" value="{{_id}}" name="category">
 				       		<i class="icon checkbox-icon" id="shellfish" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
@@ -87,7 +87,7 @@
 	    			<!-- 9th-->
 				    <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		 Eggs
-				     		<label class="checkbox item-icon-right">
+				     		<label class="checkbox item-icon-right checkbox-input-hidden">
 				       		<input type="checkbox" id="eggs" value="{{_id}}" name="category">
 				       		<i class="icon checkbox-icon" id="eggs" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
@@ -110,14 +110,14 @@
 	      		<ul class="list-borderless center" style="horizontal-align:center;">
 	    			<li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Substitutions?
-			     		<label class="checkbox checkbox-stable item-icon-right">
+			     		<label class="checkbox checkbox-stable item-icon-right checkbox-input-hidden">
 				       		<input type="checkbox" id="substitutions" value="{{_id}}" name="category">
 				       		<i class="icon checkbox-icon" id="substitutions" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
 				  	</li>
 	    			<li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		See Restrictions?
-			     		<label class="checkbox checkbox-stable item-icon-right">
+			     		<label class="checkbox checkbox-stable item-icon-right checkbox-input-hidden">
 				       		<input type="checkbox" id="restrictions" value="{{_id}}" name="category">
 				       		<i class="icon checkbox-icon" id="restrictions" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>

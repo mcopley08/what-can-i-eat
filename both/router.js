@@ -22,14 +22,13 @@ Router.map(function() {
     path: '/allergies'
   });
   this.route('results', {
-    path: '/results'
+    path: '/results',
+    data: function(){
+      alert(JSON.stringify(this.params.query,null,2));
+
+    }
   });
-  this.route('edible', {
-    path: '/edible'
-  });
-  this.route('not-edible', {
-    path: '/not-edible'
-  });
+  
 });
 
 // Router.route('/restaurants');

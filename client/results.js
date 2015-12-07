@@ -1,5 +1,11 @@
 Template.results.helpers({
-  restaurantName: "Burger King"
+
+  // onload: function() {
+
+  //   item: [{name: "Martina"}, {name: "Lugo"}, {name: "Alice"}];
+
+  // }
+    
 });
 
 
@@ -9,45 +15,100 @@ Template.results.helpers({
 
 
 Template.results.rendered = function () {
+
+  alert(result);
+  
   document.getElementById("edible").className +="active";
   document.getElementById("e").style.display ='inline';
   document.getElementById("n").style.display ='none';
-  // document.getElementById("main").innerHTML= '<iframe class="row"src="edible.html" id="page" style="top:100px;"></iframe>';//<h1 style="top:100px;">hol</h1>'; //'<object type="text/html" data="edible.html"></object>';
+
+  // item: [{name: array[0]}, {name: array[1]}, {name: "Alice"}];
+
+  // alert(result["data"].edible.items[0].name);
+  //   var array = [];
+
+  //   for(i=0;i< result["data"].edible.items.size; i++)
+  //   {
+  //     array.push(result["data"].edible.items[0].name);
+  //   // results["ingredients"]= result["data"].edible.items[i].ingredients; 
+  //   }  
+  //     alert(array.size);
+};      
+
+  //   item: function() {
+
+  //     var array = [];
+
+  //     for(i=0;i< result["data"].edible.items.size; i++)
+  //     {
+  //       array.push(result["data"].edible.items[0].name);
+  //     // results["ingredients"]= result["data"].edible.items[i].ingredients; 
+  //     }  
+  //       alert(array.size);
+  //     var tab = Template.instance().currentTab;
+  //     var results = {
+  //       "name": array[0]
+  //       // "ingredients": result["data"].edible.items[0].name
+  //     };
+
+
+  //     // return { contentType: tab, items: data[ tab ] };
+  // }  
+
+
+ 
+  
+
 
 //   var current = Router.current().location.get().path;
 //   // alert(current);
 //   if(href === current){
 //      //Session.set('results.current', href);
 //   }
-};
 
-// Template.results.helpers({
-//   tab: function() {
-//   	// return "edible";
-//     // return Template.instance();
-//     // return Template.instance().currentTab.get();
-//   },
-//   tabData: function() {
-//     var tab = Template.instance().currentTab;
-//     var data = {
-//       "edible": [
-//         { "name": "Chicken Nuggets-10pc", "ingredients":"preservatives, chicken meat, and apple puree" },
-//         { "name": "Whole Wheat Bun", "ingredients": "grains and pretzels"}               
-//       ],
-//       "not-edible": [
-//         { "name": "Whopper Sandwich", "ingredients": "grains, pretzels, lactose, and soybean oil"}
-//       ]
-//     };
 
-//     return data[ tab ];
-//     // return { contentType: tab, items: data[ tab ] };
-//   }
-// });
+Template.results.helpers({
+
+  //   $items.each(function() {
+  //     obj[this.id] = $(this).val();
+  // })
+
+  // var json= JSON.stringify( obj);
+
+
+
+  edible: [{name: "Bob", ingredients: "Soy"}, {name: "Frank", ingredients: "Lava"}, {name: "Alice", ingredients: "Meat"}],
+
+  notedible: [{name: "Nada",ingredients: "ele"}, {name: "hola", ingredients: "WW"}, {name: "zero", ingredients: "Meat"}],
+
+  // component: [{ingredients: "Soy"}, {ingredients: "Meat"}, {ingredients: "Lava"}]
+
+  // item: function() {
+
+  //   var array = [];
+
+  //   for(i=0;i< result["data"].edible.items.size; i++)
+  //   {
+  //   array.push(result["data"].edible.items[0].name);
+  //   // results["ingredients"]= result["data"].edible.items[i].ingredients; 
+  //   }  
+  //     alert(array.size);
+  //   var tab = Template.instance().currentTab;
+  //   var results = {
+  //     "name": array[0]
+  //     // "ingredients": result["data"].edible.items[0].name
+  //   };
+
+
+  //   // return {items};
+  // }
+});
 
 Template.results.events({
   'click .tab-item': function(event) {
     var id = event.target.name;
     var name = event.currentTarget.name;
+
 
     if(id == "edible" || name == "edible")
     {
@@ -76,32 +137,46 @@ Template.results.events({
 
     var button = event.target.id;
     // alert(event.target.id);
-    if(button =="eat")
-    {
-      var overlay = document.getElementById("overlay_one");
-      overlay.style.display = 'block';
-      // 'display: block; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index: 100';
-      var button = document.getElementById("button");
-      var popup = document.getElementById("popup_one");
-      popup.style.display = 'block';  
-      var closePopup = document.getElementById("popupclose_one");
-        closePopup.onclick = function() {
-          overlay.style.display = 'none';
-          popup.style.display = 'none';
-      };
-    }  
-    if(button =="not")
-    {
-        var overlay = document.getElementById("overlay_two");
-        overlay.style.display = 'block';
-        var popup = document.getElementById("popup_two");
-        popup.style.display = 'block';
-        var closePopup = document.getElementById("popupclose_two");
-        closePopup.onclick = function() {
-        overlay.style.display = 'none'; 
+    var over = "overlay"+button;
+    var overlay = document.getElementById(over);
+    overlay.style.display = 'block';
+    // var button = document.getElementById("button");
+    var pop = "pop"+button;
+    var popup = document.getElementById(pop);
+    popup.style.display = 'block';  
+    var popclose = "popclose"+button;
+    var closePopup = document.getElementById(popclose);
+      closePopup.onclick = function() {
+        overlay.style.display = 'none';
         popup.style.display = 'none';
-        };
-    }  
+      }  
+      
+  //   if(button =="eat")
+  //   {
+  //     var overlay = document.getElementById("overlay_one");
+  //     overlay.style.display = 'block';
+  //     // 'display: block; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index: 100';
+  //     var button = document.getElementById("button");
+  //     var popup = document.getElementById("popup_one");
+  //     popup.style.display = 'block';  
+  //     var closePopup = document.getElementById("popupclose_one");
+  //       closePopup.onclick = function() {
+  //         overlay.style.display = 'none';
+  //         popup.style.display = 'none';
+  //     };
+  //   }  
+  //   if(button =="not")
+  //   {
+  //       var overlay = document.getElementById("overlay_two");
+  //       overlay.style.display = 'block';
+  //       var popup = document.getElementById("popup_two");
+  //       popup.style.display = 'block';
+  //       var closePopup = document.getElementById("popupclose_two");
+  //       closePopup.onclick = function() {
+  //       overlay.style.display = 'none'; 
+  //       popup.style.display = 'none';
+  //       };
+  //   }  
   }
     
 });
