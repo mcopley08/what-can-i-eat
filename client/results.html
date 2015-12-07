@@ -16,70 +16,17 @@
    				<div class="content has-header col col-90 col-offset-20" id="main" style="top:100px;">
    						
 	   				<div class="row row-center" id="e">
-   						    <ul class="list-group col col-100">
-   						  	{{#each edible}}
-							  	<li class="list-group-item item-button-right col col-90" style="padding: 20px 20px;">{{name}}<button class="button button-positive button-small button-outline" id="{{name}}">View</button></li>
-							  
+   						    <ul class="list-group col col-100" id="first">
+   						  
 							<!-- </ul> -->
-
-							<div id="overlay{{name}}" style="display:none; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index:100;"></div>	<!-- overlay -->
 							
-							<div class="popup col col-50" id="pop{{name}}" style="display: none; position: absolute; top: 50%; left: 50%; background: #fff; margin-left: -170px; margin-top: -100px; z-index: 200;">
-							    <div class="popupcontent" style="padding: 10px;">
-							        <div class="card col">
-								    	<div class="item item-divider">
-									   		<div class="popupcontrols">
-							        			<span id="popclose{{name}}" style="float: right; padding: 10px; cursor: pointer;"><i class="icon ion-close"></i></span> 
-							        			Ingredients
-							    			</div>
-									    </div>
-										<div class="item item-text-wrap">
-										  	<a class="item item-thumbnail-center" href="#">
-	  										<img class="image" src="http://s29.postimg.org/5juqllx1f/image.png"/> </a>
-										{{ingredients}}	      
-										</div>
-										<div class="item item-divider">
-
- 										</div>
-									</div>  
-							    </div>
-							</div>
 							
-							{{/each}}
 							</ul>
 					</div>
    					
    					<div class="row row-center" id="n">
-	   						<ul class="list-group col col-100">
-	   							{{#each notedible}}
-						      	<li class="list-group-item item-button-right col col-90" style="padding: 20px 20px;">{{name}}<button class="button button-positive button-small button-outline" id="{{name}}">View</button></li>
-						      	
-						       
-							<!-- </ul> -->
-							<!-- POPUP -->
-								<div id="overlay{{name}}" style="display:none; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index: 100;">
-								</div> <!-- overlay -->
-
-								<div class="popup col col-50" id="pop{{name}}" style="display: none; position: absolute; top: 50%; left: 50%; background: #fff; margin-left: -170px; margin-top: -100px; z-index: 200;">
-								    <div class="popupcontent" style="padding: 10px;">
-								        <div class="card col">
-										    <div class="item item-divider">
-										   	 	<div class="popupcontrols">
-								        		<span id="popclose{{name}}" style="float: right; padding: 10px; cursor: pointer;"><i class="icon ion-close"></i> </span> Ingredients 
-								    			</div>
-										    </div>
-										    
-											<div class="item item-text-wrap">
-											  	<a class="item item-thumbnail-center" href="#">
-	      										<img class="img" src="http://s29.postimg.org/5juqllx1f/image.png"> {{ingredients}}</a>
-											    
-										    </div>
-										 
-										</div>  
-								    </div>    
-								</div>  
-							{{/each}}	 
-							<!-- END POPUP -->
+   						<ul class="list-group col col-100" id="second">
+	   							
    						</ul>
    					</div> 
    				</div>	

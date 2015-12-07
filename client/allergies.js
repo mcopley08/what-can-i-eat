@@ -53,10 +53,12 @@ Template.allergies.events({
             queryParams: form_data
           };
 
+    api_response ={};      
     apigClient.restaurantsRestaurantNameTypeOfMenuGet(params, body, additionalParams)
       .then(function(result) {
         // Add success callback code here.
         // alert(JSON.stringify(result, null, 2));
+        api_response = result; 
         Router.go('results', {query: result});
 
         // return Lists.findOne(this.params._id);

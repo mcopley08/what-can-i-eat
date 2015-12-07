@@ -1,108 +1,70 @@
-Template.results.helpers({
-
-  // onload: function() {
-
-  //   item: [{name: "Martina"}, {name: "Lugo"}, {name: "Alice"}];
-
-  // }
-    
-});
-
-
-// Template.results.onRendered( function() {
-//   this.currentTab = new ReactiveVar('edible');
-// });
-
-
 Template.results.rendered = function () {
 
-  alert(result);
+  // alert(api_response["data"].edible.items[0].name);
   
+  // alert(Object.keys(api_response["data"].edible.items).length);
+  // alert(Object.keys(api_response).length);
   document.getElementById("edible").className +="active";
   document.getElementById("e").style.display ='inline';
   document.getElementById("n").style.display ='none';
 
-  // item: [{name: array[0]}, {name: array[1]}, {name: "Alice"}];
+  var size = Object.keys(api_response["data"].edible.items).length;
 
-  // alert(result["data"].edible.items[0].name);
-  //   var array = [];
-
-  //   for(i=0;i< result["data"].edible.items.size; i++)
-  //   {
-  //     array.push(result["data"].edible.items[0].name);
-  //   // results["ingredients"]= result["data"].edible.items[i].ingredients; 
-  //   }  
-  //     alert(array.size);
-};      
-
-  //   item: function() {
-
-  //     var array = [];
-
-  //     for(i=0;i< result["data"].edible.items.size; i++)
-  //     {
-  //       array.push(result["data"].edible.items[0].name);
-  //     // results["ingredients"]= result["data"].edible.items[i].ingredients; 
-  //     }  
-  //       alert(array.size);
-  //     var tab = Template.instance().currentTab;
-  //     var results = {
-  //       "name": array[0]
-  //       // "ingredients": result["data"].edible.items[0].name
-  //     };
-
-
-  //     // return { contentType: tab, items: data[ tab ] };
-  // }  
-
+  for(var i=0; i< size; i++)
+  {
+    var name = api_response["data"].edible.items[i].name;
+    var ingredients ="";
+    if(typeof api_response["data"].edible.items[i].ingredients != 'undefined' )
+    {
+        ingredients = api_response["data"].edible.items[i].ingredients;
+    }
+    else if(typeof api_response["data"].edible.items[i].components != 'undefined')
+    {
+         ingredients = api_response["data"].edible.items[i].components;
+    }  
+    var out = '<li class="list-group-item item-button-right col col-90" style="padding: 20px 20px;">';
+    out += name +'<button class="button button-positive button-small button-outline" id="';
+    out += name+'">View</button></li>';
+    var outer = '<div id="overlay'+name+'" style="display:none; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index:100;"></div><div class="popup col col-50" id="pop'+name+'" style="display: none; position: absolute; top: 50%; left: 50%; background: #fff; margin-left: -170px; margin-top: -100px; z-index: 200;">';
+    outer += '<div class="popupcontent" style="padding: 10px;"><div class="card col"><div class="item item-divider"><div class="popupcontrols"><span id="popclose'+name+'" style="float: right; padding: 10px; cursor: pointer;"><i class="icon ion-close"></i></span> Ingredients</div>';
+    outer += '</div><div class="item item-text-wrap"><a class="item item-thumbnail-center" href="#"><img class="image" src="http://s29.postimg.org/5juqllx1f/image.png"/> </a>'+ingredients;
+    outer += '</div><div class="item item-divider"></div></div></div></div>';
+    document.getElementById("first").innerHTML += out; 
+    document.getElementById("first").innerHTML += outer; 
+   
+  }  
 
  
-  
+  size = Object.keys(api_response["data"]["not-edible"].items).length;
 
 
-//   var current = Router.current().location.get().path;
-//   // alert(current);
-//   if(href === current){
-//      //Session.set('results.current', href);
-//   }
+  for(var j=0; j< size; j++)
+  {
+    var name = api_response["data"].edible.items[j].name;
+    var ingredients ="";
+    if(typeof api_response["data"].edible.items[j].ingredients != 'undefined' )
+    {
+        ingredients = api_response["data"].edible.items[j].ingredients;
+    }
+    else if(typeof api_response["data"].edible.items[j].components != 'undefined')
+    {
+         ingredients = api_response["data"].edible.items[j].components;
+    }  
+    out = '<li class="list-group-item item-button-right col col-90" style="padding: 20px 20px;">';
+    out += name +'<button class="button button-positive button-small button-outline" id="';
+    out += name+'">View</button></li>';
+    outer = '<div id="overlay'+name+'" style="display:none; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index:100;"></div><div class="popup col col-50" id="pop'+name+'" style="display: none; position: absolute; top: 50%; left: 50%; background: #fff; margin-left: -170px; margin-top: -100px; z-index: 200;">';
+    outer += '<div class="popupcontent" style="padding: 10px;"><div class="card col"><div class="item item-divider"><div class="popupcontrols"><span id="popclose'+name+'" style="float: right; padding: 10px; cursor: pointer;"><i class="icon ion-close"></i></span> Ingredients</div>';
+    outer += '</div><div class="item item-text-wrap"><a class="item item-thumbnail-center" href="#"><img class="image" src="http://s29.postimg.org/5juqllx1f/image.png"/> </a>'+ingredients;
+    outer += '</div><div class="item item-divider"></div></div></div></div>';
+    // document.getElementById("first").appendChild(out);
+    document.getElementById("second").innerHTML += out; 
+    document.getElementById("second").innerHTML += outer; 
+   
+  } 
 
 
-Template.results.helpers({
-
-  //   $items.each(function() {
-  //     obj[this.id] = $(this).val();
-  // })
-
-  // var json= JSON.stringify( obj);
-
-
-
-  edible: [{name: "Bob", ingredients: "Soy"}, {name: "Frank", ingredients: "Lava"}, {name: "Alice", ingredients: "Meat"}],
-
-  notedible: [{name: "Nada",ingredients: "ele"}, {name: "hola", ingredients: "WW"}, {name: "zero", ingredients: "Meat"}],
-
-  // component: [{ingredients: "Soy"}, {ingredients: "Meat"}, {ingredients: "Lava"}]
-
-  // item: function() {
-
-  //   var array = [];
-
-  //   for(i=0;i< result["data"].edible.items.size; i++)
-  //   {
-  //   array.push(result["data"].edible.items[0].name);
-  //   // results["ingredients"]= result["data"].edible.items[i].ingredients; 
-  //   }  
-  //     alert(array.size);
-  //   var tab = Template.instance().currentTab;
-  //   var results = {
-  //     "name": array[0]
-  //     // "ingredients": result["data"].edible.items[0].name
-  //   };
-
-
-  //   // return {items};
-  // }
-});
+};      
 
 Template.results.events({
   'click .tab-item': function(event) {
@@ -180,31 +142,3 @@ Template.results.events({
   }
     
 });
-
-// Template.results.events({
-// 'click': function(event){
-
-//     var overlay_one = document.getElementById("overlay_one");
-//     var overlay_two = document.getElementById("overlay_two");
-//     if(overlay_one.style.display == 'block')
-//     {
-//       if(event.target.id !="popup_one")
-//       { 
-//           overlay_one.style.display = 'none'; 
-//           popup.style.display = 'none';
-       
-//       }
-//     }
-//     else if(overlay_two.style.display == "block")  
-//     {
-//       if(event.target.id !="popup_two" )
-//       { 
-//           overlay_two.style.display = 'none'; 
-//           popup_two.style.display = 'none';
-        
-//       }
-//     }  
-
-//   }
-    
-// });
