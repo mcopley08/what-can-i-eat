@@ -24,10 +24,9 @@ Template.allergies.events({
 		{
 			form_data["substitutions"]="true";
 		}	
-		if(canthave)
-		{
-			form_data["returnBoth"]="true";
-		}	
+	
+		form_data["returnBoth"]="true";
+			
 		
 
 	apigClient = apigClientFactory.newClient({

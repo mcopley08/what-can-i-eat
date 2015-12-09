@@ -25,9 +25,9 @@ Template.results.rendered = function () {
     var out = '<li class="list-group-item item-button-right col col-90" style="padding: 20px 20px;">';
     out += name +'<button class="button button-positive button-small button-outline" id="';
     out += name+'">View</button></li>';
-    var outer = '<div id="overlay'+name+'" style="display:none; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index:100;"></div><div class="popup col col-50" id="pop'+name+'" style="display: none; position: absolute; top: 50%; left: 50%; background: #fff; margin-left: -170px; margin-top: -100px; z-index: 200;">';
+    var outer = '<div id="overlay'+name+'" style="display:none; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index:100;"></div><div class="popup col col-80" id="pop'+name+'" style="display: none; position: absolute; top: 50%; left: 50%; background: #fff; margin-left: -130px; margin-top: -50px; z-index: 200; width:300px;">';
     outer += '<div class="popupcontent" style="padding: 10px;"><div class="card col"><div class="item item-divider"><div class="popupcontrols"><span id="popclose'+name+'" style="float: right; padding: 10px; cursor: pointer;"><i class="icon ion-close"></i></span> Ingredients</div>';
-    outer += '</div><div class="item item-text-wrap"><a class="item item-thumbnail-center" href="#"><img class="image" src="http://s29.postimg.org/5juqllx1f/image.png"/> </a>'+ingredients;
+    outer += '</div><div class="item item-text-wrap"><a class="item item-thumbnail-center" href="#"><img class="image" src="http://s1.postimg.org/9k3jne9hb/nuggets.png"/> </a>'+ingredients;
     outer += '</div><div class="item item-divider"></div></div></div></div>';
     document.getElementById("first").innerHTML += out; 
     document.getElementById("first").innerHTML += outer; 
@@ -40,22 +40,22 @@ Template.results.rendered = function () {
 
   for(var j=0; j< size; j++)
   {
-    var name = api_response["data"].edible.items[j].name;
+    var name = api_response["data"]["not-edible"].items[j].name;
     var ingredients ="";
-    if(typeof api_response["data"].edible.items[j].ingredients != 'undefined' )
+    if(typeof api_response["data"]["not-edible"].items[j].ingredients != 'undefined' )
     {
-        ingredients = api_response["data"].edible.items[j].ingredients;
+        ingredients = api_response["data"]["not-edible"].items[j].ingredients;
     }
-    else if(typeof api_response["data"].edible.items[j].components != 'undefined')
+    else if(typeof api_response["data"]["not-edible"].items[j].components != 'undefined')
     {
-         ingredients = api_response["data"].edible.items[j].components;
+         ingredients = api_response["data"]["not-edible"].items[j].components;
     }  
     out = '<li class="list-group-item item-button-right col col-90" style="padding: 20px 20px;">';
     out += name +'<button class="button button-positive button-small button-outline" id="';
     out += name+'">View</button></li>';
-    outer = '<div id="overlay'+name+'" style="display:none; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index:100;"></div><div class="popup col col-50" id="pop'+name+'" style="display: none; position: absolute; top: 50%; left: 50%; background: #fff; margin-left: -170px; margin-top: -100px; z-index: 200;">';
+    outer = '<div id="overlay'+name+'" style="display:none; position: absolute; top: 0; bottom: 0; background: #fff; width: 100%; height: 100%; opacity: 0.8; z-index:100;"></div><div class="popup col col-70" id="pop'+name+'" style="display: none; position: absolute; top: 50%; left: 50%; background: #fff; margin-left: -130px; margin-top: -50px; z-index: 200; width:300px;">';
     outer += '<div class="popupcontent" style="padding: 10px;"><div class="card col"><div class="item item-divider"><div class="popupcontrols"><span id="popclose'+name+'" style="float: right; padding: 10px; cursor: pointer;"><i class="icon ion-close"></i></span> Ingredients</div>';
-    outer += '</div><div class="item item-text-wrap"><a class="item item-thumbnail-center" href="#"><img class="image" src="http://s29.postimg.org/5juqllx1f/image.png"/> </a>'+ingredients;
+    outer += '</div><div class="item item-text-wrap"><a class="item item-thumbnail-center" href="#"><img class="image" src="http://s11.postimg.org/41f57e7jn/whopper.png"/> </a>'+ingredients;
     outer += '</div><div class="item item-divider"></div></div></div></div>';
     // document.getElementById("first").appendChild(out);
     document.getElementById("second").innerHTML += out; 
