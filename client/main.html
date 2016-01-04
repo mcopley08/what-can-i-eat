@@ -1,0 +1,36 @@
+<template name="main">
+	{{#ionView}}
+	  	{{#ionBody}}
+	  		{{#ionContent}}
+	  		<style>
+	  		/*
+			asian food: http://s30.postimg.org/mfmj7ien5/bon_appetit_chinese_edit_2.jpg
+			just a table with salad: http://s7.postimg.org/v7cbmohqz/bon_appetit_table_edit_2.jpg
+			mexican food: http://s18.postimg.org/cehnydtfd/bon_appetit_mexican_edit_2.jpg
+			bakery: http://s11.postimg.org/mlbhj5xhf/bon_appetit_bakery_edit_5.jpg
+	  		*/
+	  		div.view { 
+			  background: 
+			  	linear-gradient(
+			      rgba(0, 0, 0, 0.15), 
+			      rgba(0, 0, 0, 0.15)
+			    ),
+			  url(http://s11.postimg.org/mlbhj5xhf/bon_appetit_bakery_edit_5.jpg) no-repeat center center fixed; 
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			}
+	  		</style>
+				<div class="content has-header form-horizontal col col-center" style="margin-top: 410px" id="main"> 
+					<!-- <img class="image col col-100" src="http://s21.postimg.org/fz9eh6y1j/cover_page.jpg"> -->
+					<br>
+					<br>
+					<form>
+						<input type="submit" class="button button-block icon-right ion-chevron-right" style="background-color:#D8D8D8" value="Let's Start!">
+					</form>
+				</div>		
+			{{/ionContent}}
+	  	{{/ionBody}}
+	  {{/ionView}}
+</template> 	

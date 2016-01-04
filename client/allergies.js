@@ -17,13 +17,25 @@ Template.allergies.events({
 		var form_data = {}
 		form_data["constraints"] = allergies;
 
+    // .replace(/ /g,"");     #strips all whitespace
+    var allow = document.getElementById('allow').value;
+    allow = allow.split(",").map(Function.prototype.call, String.prototype.trim).join(",");
+    var specialConstraints = document.getElementById('specialConstraints').value;
+    specialConstraints = specialConstraints.split(",").map(Function.prototype.call, String.prototype.trim).join(",");
 		var substitutions = document.getElementById('substitutions').value;
-		
-		var canthave = document.getElementById('restrictions').value;
-		if(substitutions)
-		{
-			form_data["substitutions"]="true";
-		}	
+
+		// var canthave = document.getElementById('restrictions').value;
+		// if(substitutions)
+		// {
+		// 	form_data["substitutions"]="true";
+		// }
+
+    if (allow !== "") {
+      form_data["allow"] = allow;
+    }
+    if (specialConstraints !== "") {
+      form_data["specialConstraints"] = specialConstraints;
+    }
 	
 		form_data["returnBoth"]="true";
 			
@@ -52,12 +64,17 @@ Template.allergies.events({
             queryParams: form_data
           };
 
-    api_response ={};      
+          console.log("request form data is: ");
+          console.log(form_data);
+
+    api_response = {};      
     apigClient.restaurantsRestaurantNameTypeOfMenuGet(params, body, additionalParams)
       .then(function(result) {
         // Add success callback code here.
         // alert(JSON.stringify(result, null, 2));
         api_response = result; 
+        console.log("heres the api response");
+        console.log(api_response);
         Router.go('results', {query: result});
 
         // return Lists.findOne(this.params._id);

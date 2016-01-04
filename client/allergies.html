@@ -4,10 +4,7 @@
   		{{#ionContent}}
   		
 			<div class="bar bar-positive" id="header">
-				 <h1 class="title">What Can I Eat?</h1>			  
-			</div>
-			<div class="bar bar-subheader">
-  				<h2 class="title">Input Food Allergies</h2>
+				 <h1 class="title">Input Food Allergies</h1>			  
 			</div>
 			<br>
 			<br>
@@ -36,15 +33,7 @@
 				       		<i class="icon checkbox-icon" id="soy" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
 				  	</li>
-	    			 <!-- 3rd-->
-				    <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
-				  		Gluten
-			     		<label class="checkbox item-icon-right checkbox-input-hidden">
-				       		<input type="checkbox" id="gluten" value="{{_id}}" name="category">
-				       		<i class="icon checkbox-icon" id="gluten" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
-				     	</label>
-				  	</li>
-	    			 <!-- 4th-->
+	    			 <!-- 3th-->
 				  	<li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Peanuts
 			     		<label class="checkbox item-icon-right checkbox-input-hidden">
@@ -52,7 +41,7 @@
 				       		<i class="icon checkbox-icon" id="peanuts" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
 				  	</li>
-	    			 <!-- 5th-->
+	    			 <!-- 4th-->
 	    			 <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Tree Nuts
 			     		<label class="checkbox item-icon-right checkbox-input-hidden">
@@ -60,7 +49,7 @@
 				       		<i class="icon checkbox-icon" id="treenuts" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
 				  	</li>
-	    			 <!-- 6th-->
+	    			 <!-- 5th-->
 	    			 <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Fish
 			     		<label class="checkbox item-icon-right checkbox-input-hidden">
@@ -68,7 +57,7 @@
 				       		<i class="icon checkbox-icon" id="fish" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
 				  	</li>
-	    			 <!-- 7th-->
+	    			 <!-- 6th-->
 	    			 <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Wheat
 			     		<label class="checkbox item-icon-right checkbox-input-hidden">
@@ -76,7 +65,7 @@
 				       		<i class="icon checkbox-icon" id="wheat" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
 				  	</li>
-	    			 <!-- 8th-->	
+	    			 <!-- 7th-->	
 	    			<li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		Shellfish
 				     		<label class="checkbox item-icon-right checkbox-input-hidden">
@@ -84,7 +73,7 @@
 				       		<i class="icon checkbox-icon" id="shellfish" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
 				  	</li>
-	    			<!-- 9th-->
+	    			<!-- 8th-->
 				    <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
 				  		 Eggs
 				     		<label class="checkbox item-icon-right checkbox-input-hidden">
@@ -92,6 +81,32 @@
 				       		<i class="icon checkbox-icon" id="eggs" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
 				  	</li>
+				  	 <!-- 9th-->
+				    <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
+				  		Vegetarian
+			     		<label class="checkbox item-icon-right checkbox-input-hidden">
+				       		<input type="checkbox" id="non-vegetarian" value="{{_id}}" name="category">
+				       		<i class="icon checkbox-icon" id="non-vegetarian" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li>
+				  	<!-- 10th-->
+				    <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
+				  		Vegan
+			     		<label class="checkbox item-icon-right checkbox-input-hidden">
+				       		<input type="checkbox" id="non-vegan" value="{{_id}}" name="category">
+				       		<i class="icon checkbox-icon" id="non-vegan" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li>
+				  	 <!-- 11th -->
+				    <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
+				  		Gluten
+			     		<label class="checkbox item-icon-right checkbox-input-hidden">
+				       		<input type="checkbox" id="gluten" value="{{_id}}" name="category">
+				       		<i class="icon checkbox-icon" id="gluten" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li>
+				  	 
+				  	
 				 <br>
 				 <br> 	
 	      		 </ul>	
@@ -109,17 +124,31 @@
 	      		</div> -->
 	      		<ul class="list-borderless center" style="horizontal-align:center;">
 	    			<li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
-				  		Substitutions?
+				  		See Potential Substitutions?
 			     		<label class="checkbox checkbox-stable item-icon-right checkbox-input-hidden">
 				       		<input type="checkbox" id="substitutions" value="{{_id}}" name="category">
 				       		<i class="icon checkbox-icon" id="substitutions" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
 				     	</label>
 				  	</li>
-	    			<li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
-				  		See Restrictions?
+	    			<!-- <li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
+				  		See Items you cannot have?
 			     		<label class="checkbox checkbox-stable item-icon-right checkbox-input-hidden">
 				       		<input type="checkbox" id="restrictions" value="{{_id}}" name="category">
 				       		<i class="icon checkbox-icon" id="restrictions" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i> 
+				     	</label>
+				  	</li> -->
+				  	<li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
+				  		List any ingredients that are safe<br> for you to eat (separated by commas):
+			     		<label class="checkbox checkbox-stable item-icon-right">
+				       		<input type="text" id="allow" value="{{_id}}" name="category" style="width:100%; margin-top: 15px; height: 15px">
+				       		<!-- <i class="icon checkbox-icon" id="allow" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i>  -->
+				     	</label>
+				  	</li>
+				  	<li class="item item-checkbox col col-50 col-offset-25" style="padding:10px 10px;">
+				  		List any additional dietary restrictions<br> you have by names (and separated by commas):
+			     		<label class="checkbox checkbox-stable item-icon-right">
+				       		<input type="text" id="specialConstraints" value="{{_id}}" name="category" style="width:100%; margin-top: 15px; height: 15px">
+				       		<!-- <i class="icon checkbox-icon" id="SpecialRestrictions" style="margin-top:10px; margin-bottom:40px; vertical-align: middle;"></i>  -->
 				     	</label>
 				  	</li>
 

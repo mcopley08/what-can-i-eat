@@ -15,9 +15,12 @@ Router.configure({
 
 Router.map(function() {
   this.route('/', {
-    template:'restaurants'
+    template:'main'
   });
 
+  this.route('restaurants', {
+    path: '/restaurants',
+  });
   this.route('allergies', {
     path: '/allergies',
   });
