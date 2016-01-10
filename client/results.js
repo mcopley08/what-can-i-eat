@@ -162,6 +162,13 @@ Template.results.rendered = function () {
 };      
 
 Template.results.events({
+  'click .back-button': function(event) {
+    // Router.go('allergies'); 
+    history.go(-1);
+  }
+});
+
+Template.results.events({
   'click .tab-item': function(event) {
     var id = event.target.name;
     var name = event.currentTarget.name;
@@ -237,3 +244,5 @@ Template.results.events({
   }
     
 });
+
+

@@ -93,6 +93,13 @@ Template.allergies.events({
    
   });
 
+Template.allergies.events({
+  'click .back-button': function(event) {
+    // Router.go('allergies'); 
+    history.go(-1);
+  }
+});
+
 
 
 
