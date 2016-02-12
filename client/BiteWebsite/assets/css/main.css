@@ -413,18 +413,25 @@ a:after {
 /* Section Dividers Backgrounds */
 
 .divider1 {
-	background-image: url('../img/bg/divider1.jpg')
+	/*background-image: url('../img/bg/divider1.jpg')*/
+    background: linear-gradient(    rgba(0,0,0,0.3),    rgba(0,0,0,0.3)    ),   url('../img/bg/divider1.jpg');
+    background-size: cover;
 
 }
 
 .divider2 {
-	background-image: url('../img/bg/divider2.jpg')
+	/*background-image: url('../img/bg/divider2.jpg')*/
+    background: linear-gradient(    rgba(0,0,0,0.3),    rgba(0,0,0,0.3)    ),   url('../img/bg/divider2.jpg');
+    background-size: cover;
+
 
 }
 
 .divider3 {
-	background-image: url('../img/bg/divider3.jpg');
+	/*background-image: url('../img/bg/divider3.jpg');*/
 	margin-top: 0px;
+    background: linear-gradient(    rgba(0,0,0,0.3),    rgba(0,0,0,0.3)    ),   url('../img/bg/divider3.jpg');
+    background-size: cover;
 }
 
 .divider4 {
@@ -432,7 +439,9 @@ a:after {
 }
 
 .divider6 {
-	background-image: url('../img/bg/divider6.jpg')
+	/*background-image: url('../img/bg/divider6.jpg')*/
+    background-image: linear-gradient(    rgba(0,0,0,0.2),    rgba(0,0,0,0.2)    ),   url('../img/bg/divider6.jpg');
+    background-size: cover;
 }
 
 

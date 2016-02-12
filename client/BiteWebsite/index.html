@@ -16,8 +16,9 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/icomoon.css">
     <link href="assets/css/animate-custom.css" rel="stylesheet">
-    <link href="assets/css/mailchimp-styles.css" rel="stylesheet">
 
+
+    
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     
@@ -61,21 +62,6 @@
 		<!-- ==== HEADERWRAP ==== -->
 	    <div id="headerwrap" id="home" name="home">
 			<header class="clearfix">
-
-			<div class="horizontal-subscribe-form" style="margin-top: 30%">
-
-                <form class="form-inline mailchimp" action="subscribe.php" method="POST">
-                    
-                    <input type="email" id="cf-email" name="email" class="form-control input-box hide-this" placeholder="Enter your Email">
-
-                    <button type="submit" id="submit_subscribe" class="btn btn-primary standard-button hide-this">Subscribe</button>
-                    
-                </form>
-
-                <!-- MAILCHIMP SUCCESS AND ERROR MESSAGE -->
-                <p class="mailchimp-success white-text"><span class="icon-check-alt2 colored-text"></span>Thanks! Please confirm your subscription from your email inbox</p>
-                <p class="mailchimp-error white-text"><span class="icon-close-alt2"></span>Error! Please enter correct email</p>
-            </div>
 	  		 		
 	  		</header>	    
 	    </div><!-- /headerwrap -->
@@ -243,7 +229,7 @@
 		<!-- ==== SECTION DIVIDER6 ==== -->
 		<section class="section-divider textdivider divider6">
 			<div class="container">
-				<h1>CRAFTED AT THE UNIVERISTY OF MICHIGAN</h1>
+				<h1><strong>CRAFTED AT THE UNIVERISTY OF MICHIGAN</strong></h1>
 				<hr>
 			</div><!-- container -->
 		</section><!-- section -->
@@ -252,7 +238,7 @@
 			<br>
 			<br>
 
-			<h3>Newsletter</h3>
+			<h3>Sign Up For Beta</h3>
 			<p>Register to our newsletter and to receive updates about our Beta release.</p>
 			<p>
 				<form class="form-horizontal" role="form">
@@ -309,23 +295,5 @@
 	<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
 	<script type="text/javascript" src="assets/js/jquery-func.js"></script>
-	<script>
-		// mailchimp jquery
-		$('.mailchimp').ajaxChimp({
-	        callback: mailchimpCallback,
-	        url: "" //Replace this with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".  
-	    });
-
-	    function mailchimpCallback(resp) {
-	        if (resp.result === 'success') {
-	            $('.mailchimp-success').fadeIn(1000);
-	            $('.mailchimp-error').fadeOut(500);
-	            $('.hide-this').toggle();
-	        } else if (resp.result === 'error') {
-	            $('.mailchimp-error').fadeIn(1000);
-	            $('.mailchimp-success').fadeOut(500);
-	        }
-	    }
-	</script>
   </body>
 </html>
