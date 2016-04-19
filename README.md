@@ -1,4 +1,3 @@
-![](https://drive.google.com/file/d/0ByvP31YWh_LzRGk0X0tSa1IyNTg/view?usp=sharing)
 
 # Edible App 
 
